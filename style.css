@@ -88,3 +88,50 @@ body{
     width: 100%;
     height: 5px;
 }
+
+.pass-settings .options{
+    display: flex;
+    list-style: none;
+    flex-wrap: wrap;
+    margin-top: 1rem;
+}
+
+.pass-settings .options .option{
+    display: flex;
+    align-items: center;
+    width: calc(100% / 2);
+    margin-bottom: 1rem;
+}
+
+.options .option label{
+    cursor: pointer;
+    padding-left: 0.63rem;
+}
+
+.options .option input{
+    height: 16px;
+    width: 16px;
+    cursor: pointer;
+}
+
+.wrapper .generate-btn{
+    width: 100%;
+    padding: 0.94rem 0;
+    font-size: 1.06rem;
+    margin: 0.94rem 0 1.3rem;
+    border-radius: 5px;
+    background: #49EFCE;
+    color: black;
+    padding: 0.94rem 0;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-family: 'Dancing Script', cursive;
+}
+
+.title{
+    font-family: 'Dancing Script', cursive;
+    font-size: 1.31rem;
+}
+
