@@ -10,10 +10,7 @@ const characters = {
     symbol: "~!@#$%^&()[]{}></?*+-="
 }
 
-const updateSlider = () => {
-    document.querySelector(".pass-length span").innerText = lengthSlider.value;
-}
-updateSlider();
+
 
 const generatePassword = () => {
     let staticPassword = "";
@@ -42,9 +39,15 @@ const generatePassword = () => {
             }
     }
 
-    console.log(randomPassword);
+    passwordInput.value = randomPassword;
     
 }
+
+const updateSlider = () => {
+    document.querySelector(".pass-length span").innerText = lengthSlider.value;
+    generatePassword();
+}
+updateSlider();
 
 lengthSlider.addEventListener("input", updateSlider);
 generateBtn.addEventListener("click", generatePassword);
