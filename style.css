@@ -73,7 +73,22 @@ body{
     height: 100%;
     width: 50%;
     border-radius: inherit;
-    background: #ECEC16;
+    transition: width 0.3s ease-in;
+}
+
+.pass-indicator#weak::before{
+    background: #EF2D2D;
+    width: 20%;
+}
+
+.pass-indicator#medium::before{
+    background: #F3FA20;
+    width: 50%;
+}
+
+.pass-indicator#strong::before{
+    background: #20FA36;
+    width: 100%;
 }
 
 .wrapper .pass-length{
